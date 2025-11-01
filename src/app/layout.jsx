@@ -1,12 +1,11 @@
-export const metadata = {
-  title: "akord.al",
-  description: "Një dritare për punë fleksibël dhe bashkëpunime",
-};
+export const metadata = { title: "Akord.al" };
+
+import "../styles.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="sq">
-      <body>{children}</body>
+      <body className="bg-sand text-ink antialiased">{children}</body>
     </html>
   );
 }
